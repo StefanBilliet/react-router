@@ -11,6 +11,7 @@ class TestLocation {
     this.history = history || [];
     this.listeners = [];
     this._updateHistoryLength();
+    this.needsDOM = false;
   }
 
   get needsDOM() {
